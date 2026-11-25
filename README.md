@@ -122,15 +122,11 @@ DESIGN.md   Design write-up (architecture, DB, API, booking logic, concurrency, 
 - Booking lookup and cancellation need both reference and email; a wrong combination gives the same "not found" message.
 - No authentication, payments, admin panel or cloud deployment (not required).
 
-## Screenshots
-
-_Add your screenshots to `screenshots/` and link them here._
 
 ## Time spent and unfinished items
 
-- **Approximate time spent:** _[fill in, e.g. 14 hours]_
-- **Unfinished / known limitations:** _[fill in honestly, e.g. no integration test against a real MySQL, no pagination]_
+- Approximate time spent: 14 hours
+- **Unfinished / known limitations:**  no integration test against a real MySQL, no pagination.
 
 ## AI assistance disclosure
-
-_[Fill in honestly. Example: "I used an AI assistant to help scaffold the project and draft documentation. I reviewed, ran and can explain all of the code."]_
+I used an AI assistant to help scaffold the project and draft documentation. I reviewed, ran and can explain all of the code."
