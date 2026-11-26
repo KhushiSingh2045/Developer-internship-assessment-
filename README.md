@@ -122,6 +122,10 @@ DESIGN.md   Design write-up (architecture, DB, API, booking logic, concurrency, 
 - Booking lookup and cancellation need both reference and email; a wrong combination gives the same "not found" message.
 - No authentication, payments, admin panel or cloud deployment (not required).
 
+## ScreenShoot 
+<img width="1552" height="885" alt="image" src="https://github.com/user-attachments/assets/0dd2bd57-4a12-45dc-b8b4-9a0cd98e3b17" />
+
+<img width="1538" height="852" alt="image" src="https://github.com/user-attachments/assets/9775480e-d884-41af-8d29-1c01e629392c" />
 
 ## Time spent and unfinished items
 
