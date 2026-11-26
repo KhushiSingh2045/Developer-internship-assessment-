@@ -31,36 +31,11 @@ A small full-stack hotel booking app: browse and search hotels, check availabili
 
 ### 1. Database
 
-```bash
-mysql -u root -p < database/setup.sql
-```
+This creates the `hotel_db` database and a `hotel_user` account. 
 
-This creates the `hotel_db` database and a `hotel_user` account. **Edit the password in `database/setup.sql` first** and use the same one in step 2. The tables and sample data are created automatically by Flyway when the backend starts (`backend/src/main/resources/db/migration`).
+### 2. Backend (port 808
+Set the credentials as environment variables
 
-### 2. Backend (port 8080)
-
-Set the credentials as environment variables (they are not stored in the repo):
-
-```bash
-# macOS / Linux
-export DB_USER=hotel_user
-export DB_PASSWORD=your_password
-
-# Windows PowerShell
-$env:DB_USER="hotel_user"
-$env:DB_PASSWORD="your_password"
-```
-
-Then:
-
-```bash
-cd backend
-mvn spring-boot:run
-```
-
-Check it: open http://localhost:8080/api/hotels - you should see six hotels as JSON.
-
-Optional variables: `DB_URL` (default `jdbc:mysql://localhost:3306/hotel_db...`), `CORS_ORIGINS` (default `http://localhost:4200`). See `backend/.env.example`.
 
 ### 3. Frontend (port 4200)
 
@@ -70,14 +45,9 @@ npm install
 npm start
 ```
 
-Open http://localhost:4200. If your backend runs on another port, change `API_URL` in `frontend/src/app/config.ts`.
+Open http://localhost:4200. 
 
 ### 4. Run the tests
-
-```bash
-cd backend
-mvn test
-```
 
 The tests cover price calculation, date validation, the overlap rule (including back-to-back stays), "hotel full" rejection, and cancellation releasing availability. They use Mockito, so no database is needed.
 
@@ -100,8 +70,6 @@ The tests cover price calculation, date validation, the overlap rule (including 
 | GET  | `/api/bookings/{reference}?email=` | Retrieve a booking |
 | POST | `/api/bookings/{reference}/cancel?email=` | Cancel a booking |
 | GET  | `/api/bookings/{reference}/calendar?email=` | Download `.ics` (surprise feature) |
-
-Every error uses the same JSON shape: `timestamp, status, error, message, path` (plus `fieldErrors` for form validation).
 
 ## Project structure
 
@@ -130,6 +98,7 @@ DESIGN.md   Design write-up (architecture, DB, API, booking logic, concurrency, 
 ## Time spent and unfinished items
 
 - Approximate time spent: 14 hours
+- 
 - **Unfinished / known limitations:**  no integration test against a real MySQL, no pagination.
 
 ## AI assistance disclosure
