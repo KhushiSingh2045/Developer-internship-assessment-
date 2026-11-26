@@ -95,6 +95,14 @@ DESIGN.md   Design write-up (architecture, DB, API, booking logic, concurrency, 
 
 <img width="1538" height="852" alt="image" src="https://github.com/user-attachments/assets/9775480e-d884-41af-8d29-1c01e629392c" />
 
+<img width="1542" height="832" alt="image" src="https://github.com/user-attachments/assets/08c08c73-a0ce-4a38-ab26-9c19888c5c10" />
+
+<img width="1537" height="866" alt="image" src="https://github.com/user-attachments/assets/dfa1121a-da7b-49b1-ab9d-7de25162e966" />
+
+<img width="1528" height="883" alt="image" src="https://github.com/user-attachments/assets/d294670a-040b-4d6d-a4e9-b33bc6a50124" />
+
+
+
 ## Time spent and unfinished items
 
 - Approximate time spent: 14 hours
